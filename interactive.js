@@ -1,27 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const activeone = document.getElementById("active-one");
+    const activeOne = document.getElementById("active-one");
     const inactive = document.getElementById("inactive");
-    const ratingbuttons = Array.from(document.getElementsByClassName("element"));
-    const submitbutton = document.getElementById("submit");
+    const ratingButtons = Array.from(document.getElementsByClassName("element"));
+    const submitButton = document.getElementById("submit");
     const selectionSpan = document.getElementById("selection");
 
-    let selectedrating = null;
+    let selectedRating = null;
 
-    ratingbuttons.forEach(ratingbutton => {
-        ratingbutton.addEventListener('click', () => {
-            ratingbuttons.forEach(button => button.classList.remove('active'));
+    ratingButtons.forEach(ratingButton => {
+        ratingButton.addEventListener('click', () => {
+            ratingButtons.forEach(button => button.classList.remove('active'));
 
-            ratingbutton.classList.add('active');
-            selectedrating = ratingbutton.dataset.number;
+            ratingButton.classList.add('active');
+            selectedRating = ratingButton.dataset.number;
         });
     });
 
-    submitbutton.addEventListener('click', () => {
-        if (selectedrating) {
-            selectionSpan.innerHTML = '&nbsp;' + selectedrating + '&nbsp;';
+    submitButton.addEventListener('click', () => {
+        if (selectedRating) {
+            selectionSpan.innerHTML = '&nbsp;' + selectedRating + '&nbsp;';
 
             inactive.style.display = 'none';
-            activeone.style.display = 'flex';
+            activeOne.style.display = 'flex';
         } else {
             window.alert('Please select a rating first.');
         }
