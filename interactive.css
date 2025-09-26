@@ -1,0 +1,139 @@
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ html {
+     box-sizing: border-box;
+     font-family: "Overpass";
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: hsl(216, 12%, 8%);
+     color: hsl(217, 12%, 63%);
+     min-height: 100vh;
+ }
+
+ h2 {
+     color: white;
+ }
+
+ .main-container {
+     width: 325px;
+     display: flex;
+     flex-direction: column;
+     padding: 25px 20px;
+     border-radius: 20px;
+     background: linear-gradient(to bottom,
+             hsl(214, 25%, 17%),
+             hsl(214, 25%, 13%));
+ }
+
+ .circular-frame {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     background-color: hsl(210, 22%, 20%);
+ }
+
+ .circular-frame img {
+     object-fit: cover;
+ }
+
+ button {
+     font-family: "Overpass";
+     font-weight: 900;
+ }
+
+ .element {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     background-color: hsl(210, 22%, 20%);
+     color: hsl(217, 12%, 63%);
+     border: none;
+ }
+
+ .element:hover {
+     cursor: pointer;
+     background-color: hsl(25, 97%, 53%);
+     color: black;
+ }
+
+ .element:active {
+     background-color: hsl(0, 0%, 100%);
+     color: black;
+ }
+ .element.active {
+    background-color: white;
+    color: black;
+}
+#inactive{
+    display: block;
+}
+
+ .selections {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #submit {
+     margin-top: 20px;
+     padding: 10px;
+     width: 100%;
+     border-radius: 30px;
+     border: none;
+     background-color: hsl(25, 97%, 53%);
+     letter-spacing: 1px;
+ }
+
+ #submit:hover {
+     background-color: white;
+     cursor: pointer;
+ }
+
+ #active-one {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .circled {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     border-radius: 30px;
+     width: 65%;
+     height: 35px;
+     margin-top: 25px;
+     color: hsl(25, 97%, 53%);
+     background-color: hsl(210, 22%, 20%);
+ }
+ .active h2 {
+    margin-bottom: 0px;
+ }
+ .active p{
+    text-align: center;
+    font-size: 14px;
+ }
+ 
